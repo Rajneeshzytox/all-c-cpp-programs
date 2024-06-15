@@ -54,8 +54,8 @@ int main(){
     struct Arr arr1;
     printf("enter num of total size and size you want to use : \n");
     scanf("%d %d", &arr1.size, &arr1.usedSize);
-    if(arr1.usedSize > arr1.size) {
-        printf("total size can't be greater than the size you want to use");
+    if(arr1.usedSize > arr1.size || !(arr1.usedSize > 0) || !(arr1.size >0)) {
+        printf("total size should be always greater or equal to size you want to use\ntotal size should be at least 1\n size that you want to use should be greater than  0\n");
         return -1;
     }
     // calling creating array function
