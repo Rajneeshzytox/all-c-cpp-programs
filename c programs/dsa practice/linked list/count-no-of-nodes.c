@@ -22,8 +22,14 @@ typedef struct Node{
 // }
 
 void countNode(Node* head){
+    if(head == NULL){
+        printf("link list is empty\n");
+        exit(1);
+    }
     int count = 0;
-    Node* ptr = head;
+    Node* ptr = NULL;
+
+    ptr = head;
     while (ptr != NULL)
     {
         count++;
