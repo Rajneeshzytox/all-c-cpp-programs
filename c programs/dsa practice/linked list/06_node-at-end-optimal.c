@@ -52,9 +52,6 @@ int main(){
     ptrAtEnd = nodeAtEnd(ptrAtEnd, 30);
     // ********************************
 
-
-   
-
     printNode(head);
     free(head);
     return 0;
